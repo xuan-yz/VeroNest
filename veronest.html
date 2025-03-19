@@ -5,6 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>VeroCare</title>
     <link rel="stylesheet" href="veronest.css" />
+
+    <style>
+      @keyframes appear{
+        from{
+          opacity: 0;
+          scale: 0.5;
+        }
+        to{
+          opacity: 1;
+          scale: 1;
+        }
+      }
+        .hero-section,
+        .feature-section,
+        .testimonials-section{
+        animation: appear 5s linear;
+        animation-timeline: View();
+        animation-range: entry 0 cover 50%;
+      }
+    </style>
   </head>
   <body>
     <div class="page-container">
@@ -14,7 +34,7 @@
             <div class="logo">VeroCare</div>
             <div class="nav-links">
               <a href="#" class="nav-link">about</a>
-              <a href="features.html" class="nav-link">showcase</a>
+              <a href="features.html" class="nav-link">features</a>
               <a href="contact.html" class="nav-link">contact</a>
               <div class="demo-badge">
                 <div class="demo-indicator"></div>
@@ -98,12 +118,14 @@
           <h2 class="feature-title">VeroNest Reviews</h2>
           <div class="testimonials-container">
             <div class="testimonial-card">
+              <img src="images/alex.png" alt="Benjamin Viji" class="testimonial-image" />
               <p><strong>Benjamin Viji</strong></p>
               <p>VeroNest is simple and effective in energy savings! Our admin team love how much control VeroNest is able to offer</p>
             </div>
             <div class="testimonial-card">
+              <img src="images/michael.png" alt="Jonathan Holmes" class="testimonial-image" />
               <p><strong>Jonathan Holmes</strong></p>
-              <p> Our elderly folk find VeroNest very easy to use and it's incentive to plant trees for energy saved is a great incentive for them to save more energy</p>
+              <p>Our elderly folk find VeroNest very easy to use and it's incentive to plant trees per energy saved is a great incentive for them to save more energy</p>
             </div>
             <div class="cta-card">
               <p class="cta-tag">Are you interested?</p>
